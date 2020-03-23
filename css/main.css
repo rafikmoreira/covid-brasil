@@ -1,5 +1,6 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 /* CSS */
 .title-container {}
@@ -29,6 +30,12 @@
 h3 {
     padding: 0;
     margin: 0;
+}
+
+h2 {
+    font-family: 'Oswald',
+        sans-serif;
+
 }
 
 [covid-warning],
