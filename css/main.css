@@ -1,0 +1,60 @@
+.title-container {}
+
+.title-container h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.bg-blue {
+    background-color: dodgerblue
+}
+
+.text-dark-2 {
+    color: #333;
+}
+
+#covidInfo p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+#sintomas h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+[covid-warning],
+[covid-danger] {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#sintomas .col-md:hover {
+    background-color: #e67e22;
+
+}
+
+
+#sintomas h3 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+[covid-warning] {
+    background-color: #f1c40f;
+}
+
+.virus-info {
+    color: white;
+}
+
+/* Box shadow */
+.box-shadow {
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+}

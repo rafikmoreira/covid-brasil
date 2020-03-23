@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/cell.png" type="image/x-icon">
+	<title>Projeto COVID-19</title>
+	<meta name="keywords" content="agronomia, gestão, produção, escalonamento, plantação, controle, culturas" />
+	<meta name="description" content="O projeto Covid-19 foi criado para oferecer informações sobre o coronavírus" />
+	<meta property="og:title" content="Projeto Covid-19 - Versão Beta" />
+	<meta property=" og:url" content="https://rafikmoreira.github.io/covid-19/" />
+	<meta property="og:image" itemprop="image" content="img/og.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Projeto Covid-19 - Versão Beta" />
+	<meta property=" og:description"
+		content="O projeto Covid-19 foi criado para oferecer informações sobre o coronavírus" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="fb:app_id" content="#" />
+	<meta property="fb:pages" content="#" />
+	<link rel="canonical" href="https://rafikmoreira.github.io/covid-19/" />
+	<link rel="image_src" href="img/og.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@rafikmoreira" />
+	<meta name="twitter:creator" content="@rafikmoreira" />
+	<meta name="twitter:description"
+		content="O projeto Covid-19 foi criado para oferecer informações sobre o coronavírus" />
+	<meta name="twitter:title" content="Projeto Covid-19 - Versão Beta" />
+	<meta name=" twitter:image" content="img/og.png" />
+	<meta name="twitter:url" content="https://rafikmoreira.github.io/covid-19/" />
+	<meta name="RESOURCE-TYPE" content="DOCUMENT" />
+	<meta name="DISTRIBUTION" content="GLOBAL" />
+	<meta name="AUTHOR" content="@RafikMoreira" />
+	<meta name="language" content="pt-br" />
+	<meta name="RATING" content="GENERAL" />
+	<meta property="fb:admins" content="rafik.moreira" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="app">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="#header">Projeto COVID-19</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#header">Início <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#sintomas">Sintomas</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#tramissao">Transmissão</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#protecao">Medidas de Proteção</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header id="header">
+			<section id="covidInfo" class="bg-blue">
+				<div class="container py-2">
+					<div class="row">
+						<div class="col-md-4 d-flex justify-content-center">
+							<lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_gW0PCo.json"
+								background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
+							</lottie-player>
+						</div>
+						<div class="col-md-8 d-flex align-items-center">
+							<div>
+								<h2 class="text-dark-2 text-uppercase">O que é o COVID-19?</h2>
+								<p class="virus-info">
+									O coronavírus (COVID-19) é uma doença infecciosa causada por um novo vírus que nunca havia sido
+									identificado em
+									humanos.
+									O vírus causa uma doença respiratória semelhante à gripe e tem sintomas como tosse, febre e, em
+									casos
+									mais
+									graves, pneumonia. É possível se proteger ao lavar as mãos com frequência e evitar tocar no rosto.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sintomas" class="bg-dark">
+				<div class="container py-4">
+					<h2 class="text-center pb-2 text-uppercase text-white">Quais são os sintomas?</h2>
+					<div class="row box-shadow">
+						<div covid-warning class="col-md py-2">
+							<div class="p-2 d-flex justify-content-center">
+								<img src="img/antihistamines.svg" style="height:100px" alt="Pessoa limpando o nariz">
+							</div>
+							<h3 class="text-uppercase">Nariz escorrendo</h3>
+						</div>
+						<div covid-warning class="col-md py-2">
+							<div class="p-2 d-flex justify-content-center">
+								<img src="img/sore-throat.svg" style="height:100px" alt="Pessoa limpando o nariz">
+							</div>
+							<h3 class="text-uppercase">Dor de garganta</h3>
+						</div>
+						<div covid-warning class="col-md py-2">
+							<div class="p-2 d-flex justify-content-center">
+								<img src="img/cough.svg" style="height:100px" alt="Pessoa limpando o nariz">
+							</div>
+							<h3 class="text-uppercase">Tosse</h3>
+						</div>
+						<div covid-warning class="col-md py-2">
+							<div class="p-2 d-flex justify-content-center">
+								<img src="img/fever.svg" style="height:100px" alt="Pessoa limpando o nariz">
+							</div>
+							<h3 class="text-uppercase">Febre</h3>
+						</div>
+						<div covid-danger class="col-md bg-danger text-white py-2">
+							<div class="p-2 d-flex justify-content-center">
+								<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_Tkwjw8.json" background="transparent"
+									speed="1" style="width: 100px; height: 100px;" loop autoplay>
+								</lottie-player>
+							</div>
+							<h3 class="text-uppercase">Dificuldade para respirar</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="tramissao" class="bg-blue text-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="d-flex justify-content-center">
+								<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_AQ3M8U.json" background="transparent"
+									speed="1" style="width: 300px; height: 300px;" loop autoplay>
+								</lottie-player>
+							</div>
+						</div>
+						<div class="col-md-8 d-flex align-items-center">
+							<div class="div">
+								<h2 class="text-uppercase text-dark-2">Como o COVID-19 é transmitido?</h2>
+								<p>
+									A principal forma de contágio do novo coronavírus é o contato com uma pessoa infectada, que transmite
+									o
+									vírus
+									por
+									meio de tosse, espirros, gotículas de saliva ou coriza
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="protecao" class="py-3">
+				<div class="container">
+					<h2>Medidas de Proteção</h2>
+					<div>
+						<div>
+							<p>
+								Fique atento às informações mais recentes sobre o surto de COVID-19, disponíveis no site da OMS e por
+								meio de
+								sua autoridade nacional e local de saúde pública. Muitos países ao redor do mundo já viram casos de
+								COVID-19 e
+								em vários ocorreram surtos. As autoridades da China e de alguns outros países conseguiram retardar ou
+								interromper seus surtos. No entanto, a situação é imprevisível, portanto verifique regularmente as
+								últimas
+								notícias.
+							</p>
+							<p>
+								Você pode reduzir suas chances de ser infectado ou espalhar o COVID-19 tomando algumas precauções
+								simples:
+							</p>
+							<ul>
+								<li>
+									Limpe regularmente e cuidadosamente as mãos com álcool ou lave-as com água e sabão.
+
+								</li>
+								<li>
+									Mantenha pelo menos 1 metro de distância entre você e qualquer pessoa que esteja tossindo ou
+									espirrando.
+								</li>
+								<li>
+									Fique em casa se não se sentir bem. Se você tiver febre, tosse e dificuldade em respirar, procure
+									atendimento
+									médico e ligue com antecedência. Siga as instruções da sua autoridade sanitária local.
+								</li>
+								<li>
+									Mantenha-se atualizado(a) sobre cidades ou áreas locais onde o COVID-19 está se espalhando. Se
+									possível,
+									evite
+									viajar - especialmente se for uma pessoa idosa ou tiver diabetes, doenças cardíacas ou
+									pulmonares.
+								</li>
+							</ul>
+							<a target="_alt" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms">Clique
+								aqui para
+								mais infomações</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<footer>
+			<div class="bg-light">
+				<div class="container text-center py-2">
+					<span class="text-muted">Fonte: todos os dados foram retirados do site <a target="_alt"
+							href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms">World Health
+							Organization</a> - Desenvolvido por <a href="mail:rafikmoreiradias@gmail.com">@rafikmoreira</a> -
+						<span class="text-danger">Versão
+							beta, página em desenvolvimento</span></span>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>
