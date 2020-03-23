@@ -1,3 +1,7 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
+
+/* CSS */
 .title-container {}
 
 .title-container h1 {
@@ -33,15 +37,18 @@ h3 {
     transition: 0.4s;
 }
 
-#sintomas .col-md:hover {
+/* #sintomas .col-md:hover {
     background-color: #e67e22;
 
-}
+} */
 
 
 #sintomas h3 {
     font-size: 1.3rem;
     text-align: center;
+    font-family: 'Bellota', cursive;
+    font-weight: 800;
+
 }
 
 [covid-warning] {
