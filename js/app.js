@@ -14,7 +14,6 @@ const getData = async (apiUrl) => {
     const recovered = document.getElementById("recovered")
     const deaths = document.getElementById("deaths")
     const data = await axios(apiUrl).then(r => r.data[0])
-    console.log(data)
     // set values
     lastUpdate.innerHTML = moment(data.lastUpdate).format("LLL")
     confirmed.innerHTML = data.confirmed
