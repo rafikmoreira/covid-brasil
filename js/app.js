@@ -24,7 +24,7 @@ const getData = async (apiUrl) => {
     loader.classList.add("d-none")
     covidStatus.classList.remove("d-none")
   } catch (e) {
-    console.log("Ocorreu um erro ao tentar obter os dados.")
+    console.log("Ocorreu um erro ao tentar obter os dados. " + e)
   }
 }
 
