@@ -38,18 +38,6 @@ h2 {
 
 }
 
-[covid-warning],
-[covid-danger] {
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-/* #sintomas .col-md:hover {
-    background-color: #e67e22;
-
-} */
-
-
 #sintomas h3 {
     font-size: 1.3rem;
     text-align: center;
@@ -58,12 +46,25 @@ h2 {
 
 }
 
-[covid-warning] {
-    background-color: #f1c40f;
-}
 
 .virus-info {
     color: white;
+}
+
+#data-covid {
+    text-transform: uppercase;
+    font-family: 'Oswald',
+        sans-serif;
+}
+
+#covidStatus h3 {
+    font-weight: 800;
+}
+
+#covidStatus .row span {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #ffc107;
 }
 
 /* Box shadow */
