@@ -13,7 +13,7 @@ const getData = async (apiUrl) => {
     const active = document.getElementById("active")
     const recovered = document.getElementById("recovered")
     const deaths = document.getElementById("deaths")
-    const data = await axios(apiUrl).then(r => r.data[0])
+    const data = await axios(apiUrl).then(r => r.data)
     console.log(data)
     // set values
     lastUpdate.innerHTML = moment(data.lastUpdate).format("LLL")
@@ -24,7 +24,7 @@ const getData = async (apiUrl) => {
     loader.classList.add("d-none")
     covidStatus.classList.remove("d-none")
   } catch (e) {
-    console.log("Ocorreu um erro ao tentar obter os dados. " + e)
+    console.log("Ocorreu um erro ao tentar obter os dados.")
   }
 }
 
