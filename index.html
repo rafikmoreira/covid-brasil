@@ -1,365 +1,507 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XVBHLK0KFF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVBHLK0KFF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag("config", "G-XVBHLK0KFF");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/cell.png" type="image/x-icon" />
+    <title>CovidBrasil</title>
+    <meta
+      name="keywords"
+      content="saude, virus, covid19, coronavirus, prevencao"
+    />
+    <meta
+      name="description"
+      content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais"
+    />
+    <meta property="og:title" content="CovidBrasil - BETA" />
+    <meta property=" og:url" content="https://covidbrasil.info/" />
+    <meta property="og:image" itemprop="image" content="img/og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CovidBrasil - BETA" />
+    <meta
+      property=" og:description"
+      content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="fb:app_id" content="#" />
+    <meta property="fb:pages" content="#" />
+    <link rel="canonical" href="https://covidbrasil.info/" />
+    <link rel="image_src" href="img/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@rafikmoreira" />
+    <meta name="twitter:creator" content="@rafikmoreira" />
+    <meta
+      name="twitter:description"
+      content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais"
+    />
+    <meta name="twitter:title" content="CovidBrasil - BETA" />
+    <meta name=" twitter:image" content="img/og.png" />
+    <meta name="twitter:url" content="https://covidbrasil.info/" />
+    <meta name="RESOURCE-TYPE" content="DOCUMENT" />
+    <meta name="DISTRIBUTION" content="GLOBAL" />
+    <meta name="AUTHOR" content="@RafikMoreira" />
+    <meta name="language" content="pt-br" />
+    <meta name="RATING" content="GENERAL" />
+    <meta property="fb:admins" content="rafikmoreira" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-    gtag('config', 'G-XVBHLK0KFF');
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="img/cell.png" type="image/x-icon" />
-  <title>CovidBrasil</title>
-  <meta name="keywords" content="saude, virus, covid19, coronavirus, prevencao" />
-  <meta name="description"
-    content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais" />
-  <meta property="og:title" content="CovidBrasil - BETA" />
-  <meta property=" og:url" content="https://covidbrasil.info/" />
-  <meta property="og:image" itemprop="image" content="img/og.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="CovidBrasil - BETA" />
-  <meta property=" og:description"
-    content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta property="fb:app_id" content="#" />
-  <meta property="fb:pages" content="#" />
-  <link rel="canonical" href="https://covidbrasil.info/" />
-  <link rel="image_src" href="img/og.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@rafikmoreira" />
-  <meta name="twitter:creator" content="@rafikmoreira" />
-  <meta name="twitter:description"
-    content="Um projeto criado para oferecer informações sobre o coronavírus para a população brasileira. Dados sobre o contágio em tempo real, dicas de prevenção e muito mais" />
-  <meta name="twitter:title" content="CovidBrasil - BETA" />
-  <meta name=" twitter:image" content="img/og.png" />
-  <meta name="twitter:url" content="https://covidbrasil.info/" />
-  <meta name="RESOURCE-TYPE" content="DOCUMENT" />
-  <meta name="DISTRIBUTION" content="GLOBAL" />
-  <meta name="AUTHOR" content="@RafikMoreira" />
-  <meta name="language" content="pt-br" />
-  <meta name="RATING" content="GENERAL" />
-  <meta property="fb:admins" content="rafikmoreira" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+  <body>
+    <div id="app">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#app">CovidBrasil</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container">
-        <a class="navbar-brand" href="#app">CovidBrasil</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#app">Início <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sintomas">Sintomas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tramissao">Transmissão</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#protecao">Medidas de Proteção</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#app"
+                  >Início <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sintomas">Sintomas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tramissao">Transmissão</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#protecao">Medidas de Proteção</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header id="header">
-      <section id="data-covid" class="bg-danger text-white">
-        <div class="container py-4">
-          <div id="loader">
-            <div class="d-flex justify-content-center">
-              <div class="spinner-border text-dark" role="status">
-                <span class="sr-only">Loading...</span>
+      </nav>
+      <header id="header">
+        <section id="data-covid" class="bg-danger text-white">
+          <div class="container py-4">
+            <div id="loader">
+              <div class="d-flex justify-content-center">
+                <div class="spinner-border text-dark" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </div>
+            </div>
+            <div id="covidStatus" class="d-none">
+              <h3 class="text-center pb-2 text-dark">
+                Brasil - Atualizado em <span id="lastUpdate"></span>
+              </h3>
+              <div class="row text-center">
+                <div class="col-md">
+                  <div>
+                    <span id="confirmed">0</span>
+                  </div>
+                  Total de Casos
+                </div>
+                <div class="col-md">
+                  <div>
+                    <span id="active">0</span>
+                  </div>
+                  Casos Atuais
+                </div>
+                <div class="col-md">
+                  <div>
+                    <span id="recovered">0</span>
+                  </div>
+                  Pessoas Curadas
+                </div>
+                <div class="col-md">
+                  <div>
+                    <span id="deaths">0</span>
+                  </div>
+                  Total de Mortos
+                </div>
               </div>
             </div>
           </div>
-          <div id="covidStatus" class="d-none">
-            <h3 class="text-center pb-2 text-dark">
-              Brasil - Atualizado em <span id="lastUpdate"></span>
-            </h3>
-            <div class="row text-center">
-              <div class="col-md">
-                <div>
-                  <span id="confirmed">0</span>
-                </div>
-                Total de Casos
+        </section>
+        <section id="covidInfo" class="bg-primary">
+          <div class="container py-4">
+            <div class="row">
+              <div class="col-md-4 d-flex justify-content-center">
+                <lottie-player
+                  src="https://assets9.lottiefiles.com/private_files/lf30_gW0PCo.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 300px; height: 300px;"
+                  loop
+                  autoplay
+                >
+                </lottie-player>
               </div>
-              <div class="col-md">
+              <div class="col-md-8 d-flex align-items-center">
                 <div>
-                  <span id="active">0</span>
+                  <h2 class="text-dark-2 text-uppercase">
+                    <i class="fas fa-user-md"></i> O que é o COVID-19?
+                  </h2>
+                  <p class="virus-info">
+                    O coronavírus (COVID-19) é uma doença infecciosa causada por
+                    um novo vírus que nunca havia sido identificado em humanos.
+                    O vírus causa uma doença respiratória semelhante à gripe e
+                    tem sintomas como tosse, febre e, em casos mais graves,
+                    pneumonia. É possível se proteger ao lavar as mãos com
+                    frequência e manter pelo menos 1 metro de distância entre
+                    você e qualquer pessoa que esteja tossindo ou espirrando.
+                  </p>
                 </div>
-                Casos Atuais
               </div>
-              <div class="col-md">
-                <div>
-                  <span id="recovered">0</span>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section id="sintomas" class="bg-dark">
+        <div class="container py-4">
+          <h2 class="text-center pb-2 text-uppercase text-warning">
+            <i class="fas fa-notes-medical"></i> Quais são os principais
+            sintomas?
+          </h2>
+          <!-- <hr class="d-none d-md-block" /> -->
+          <div class="row text-white">
+            <div class="col-md py-3">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
+                  style="height: 150px; width: 150px;"
+                >
+                  <img
+                    src="img/antihistamines.svg"
+                    style="height:100px"
+                    alt="ícone de uma pessoa limpando o nariz"
+                  />
                 </div>
-                Pessoas Curadas
               </div>
-              <div class="col-md">
-                <div>
-                  <span id="deaths">0</span>
+              <h3 class="text-center text-uppercase mt-2 text-warning">
+                Nariz escorrendo
+              </h3>
+            </div>
+            <div class="col-md py-3">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="hvr-pulse-grow  d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
+                  style="height: 150px; width: 150px;"
+                >
+                  <img
+                    src="img/sore-throat.svg"
+                    style="height:100px"
+                    alt="ícone de uma pessoa com dor de garganta"
+                  />
                 </div>
-                Total de Mortos
               </div>
+              <h3 class="text-center text-uppercase mt-2 text-warning">
+                Dor de garganta
+              </h3>
+            </div>
+            <div class="col-md py-3">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
+                  style="height: 150px; width: 150px;"
+                >
+                  <img
+                    src="img/cough.svg"
+                    style="height:100px"
+                    alt="ícone de uma pessoa tossindo"
+                  />
+                </div>
+              </div>
+              <h3 class="text-center text-uppercase mt-2 text-warning">
+                Tosse
+              </h3>
+            </div>
+            <div class="col-md py-3">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
+                  style="height: 150px; width: 150px;"
+                >
+                  <img
+                    src="img/fever.svg"
+                    style="height:100px"
+                    alt="ícone de uma pessoa com febre"
+                  />
+                </div>
+              </div>
+              <h3 class="text-center text-uppercase mt-2 text-warning">
+                Febre
+              </h3>
+            </div>
+            <div class="col-md py-3 text-danger">
+              <div class="d-flex justify-content-center">
+                <div
+                  class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-danger box-shadow"
+                  style="height: 150px; width: 150px;"
+                >
+                  <lottie-player
+                    src="https://assets5.lottiefiles.com/packages/lf20_Tkwjw8.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 100px; height: 100px;"
+                    loop
+                    autoplay
+                  >
+                  </lottie-player>
+                </div>
+              </div>
+              <h3 class="text-center text-uppercase mt-2">
+                Dificuldade para respirar
+              </h3>
             </div>
           </div>
         </div>
       </section>
-      <section id="covidInfo" class="bg-primary">
+      <section id="tramissao" class="bg-primary text-white">
         <div class="container py-4">
           <div class="row">
-            <div class="col-md-4 d-flex justify-content-center">
-              <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_gW0PCo.json"
-                background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
-              </lottie-player>
+            <div class="col-md-4 pb-3">
+              <div class="d-flex justify-content-center">
+                <lottie-player
+                  src="https://assets3.lottiefiles.com/packages/lf20_CYBIbn.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 150px; height: 150px;"
+                  loop
+                  autoplay
+                >
+                </lottie-player>
+              </div>
             </div>
             <div class="col-md-8 d-flex align-items-center">
-              <div>
-                <h2 class="text-dark-2 text-uppercase">
-                  <i class="fas fa-user-md"></i> O que é o COVID-19?
+              <div class="div">
+                <h2 class="text-uppercase text-dark-2">
+                  <i class="fas fa-heartbeat"></i> Como o COVID-19 é
+                  transmitido?
                 </h2>
-                <p class="virus-info">
-                  O coronavírus (COVID-19) é uma doença infecciosa causada por
-                  um novo vírus que nunca havia sido identificado em humanos.
-                  O vírus causa uma doença respiratória semelhante à gripe e
-                  tem sintomas como tosse, febre e, em casos mais graves,
-                  pneumonia. É possível se proteger ao lavar as mãos com
-                  frequência e manter pelo menos 1 metro de distância entre
-                  você e qualquer pessoa que esteja tossindo ou espirrando.
+                <p class="text-justify m-0">
+                  A principal forma de contágio do novo coronavírus é o contato
+                  com uma pessoa infectada, que transmite o vírus por meio de
+                  tosse, espirros, gotículas de saliva ou coriza.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </header>
-    <section id="sintomas" class="bg-dark">
-      <div class="container py-4">
-        <h2 class="text-center pb-2 text-uppercase text-warning">
-          <i class="fas fa-notes-medical"></i> Quais são os principais
-          sintomas?
-        </h2>
-        <hr class="d-none d-md-block" />
-        <div class="row text-white">
-          <div class="col-md py-3">
-            <div class="d-flex justify-content-center">
-              <div
-                class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
-                style="height: 150px; width: 150px;">
-                <img src="img/antihistamines.svg" style="height:100px" alt="ícone de uma pessoa limpando o nariz" />
-              </div>
-            </div>
-            <h3 class="text-center text-uppercase mt-2 text-warning">
-              Nariz escorrendo
-            </h3>
-          </div>
-          <div class="col-md py-3">
-            <div class="d-flex justify-content-center">
-              <div
-                class="hvr-pulse-grow  d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
-                style="height: 150px; width: 150px;">
-                <img src="img/sore-throat.svg" style="height:100px" alt="ícone de uma pessoa com dor de garganta" />
-              </div>
-            </div>
-            <h3 class="text-center text-uppercase mt-2 text-warning">
-              Dor de garganta
-            </h3>
-          </div>
-          <div class="col-md py-3">
-            <div class="d-flex justify-content-center">
-              <div
-                class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
-                style="height: 150px; width: 150px;">
-                <img src="img/cough.svg" style="height:100px" alt="ícone de uma pessoa tossindo" />
-              </div>
-            </div>
-            <h3 class="text-center text-uppercase mt-2 text-warning">
-              Tosse
-            </h3>
-          </div>
-          <div class="col-md py-3">
-            <div class="d-flex justify-content-center">
-              <div
-                class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-warning box-shadow"
-                style="height: 150px; width: 150px;">
-                <img src="img/fever.svg" style="height:100px" alt="ícone de uma pessoa com febre" />
-              </div>
-            </div>
-            <h3 class="text-center text-uppercase mt-2 text-warning">
-              Febre
-            </h3>
-          </div>
-          <div class="col-md py-3 text-danger">
-            <div class="d-flex justify-content-center">
-              <div
-                class="hvr-pulse-grow d-flex justify-content-center align-items-center rounded-circle bg-danger box-shadow"
-                style="height: 150px; width: 150px;">
-                <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_Tkwjw8.json" background="transparent"
-                  speed="1" style="width: 100px; height: 100px;" loop autoplay>
-                </lottie-player>
-              </div>
-            </div>
-            <h3 class="text-center text-uppercase mt-2">
-              Dificuldade para respirar
-            </h3>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="tramissao" class="bg-primary text-white">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-md-4 pb-3">
-            <div class="d-flex justify-content-center">
-              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_CYBIbn.json" background="transparent"
-                speed="1" style="width: 150px; height: 150px;" loop autoplay>
-              </lottie-player>
-            </div>
-          </div>
-          <div class="col-md-8 d-flex align-items-center">
-            <div class="div">
-              <h2 class="text-uppercase text-dark-2">
-                <i class="fas fa-heartbeat"></i> Como o COVID-19 é
-                transmitido?
-              </h2>
-              <p class="text-justify m-0">
-                A principal forma de contágio do novo coronavírus é o contato
-                com uma pessoa infectada, que transmite o vírus por meio de
-                tosse, espirros, gotículas de saliva ou coriza.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="protecao" class="py-3">
-      <div class="container py-4">
-        <h2 class="text-uppercase">
-          <i class="fas fa-medkit"></i> Medidas de Proteção
-        </h2>
-        <div class="text-justify">
-          <div>
-            <p class="m-0">
-              Fique atento às informações mais recentes sobre o surto de
-              COVID-19, disponíveis no site da OMS e por meio de sua
-              autoridade nacional e local de saúde pública. Muitos países ao
-              redor do mundo já viram casos de COVID-19 e em vários ocorreram
-              surtos. As autoridades da China e de alguns outros países
-              conseguiram retardar ou interromper seus surtos. No entanto, a
-              situação é imprevisível, portanto verifique regularmente as
-              últimas notícias.
-            </p>
-
-            <p class="mt-3">
-              Você pode reduzir suas chances de ser infectado ou espalhar o
-              COVID-19 tomando algumas precauções simples:
-            </p>
-            <ul>
-              <li>
-                Limpe regularmente e cuidadosamente as mãos com álcool ou
-                lave-as com água e sabão.
-              </li>
-              <li>
-                Mantenha pelo menos 1 metro de distância entre você e qualquer
-                pessoa que esteja tossindo ou espirrando.
-              </li>
-              <li>
-                Fique em casa se não se sentir bem. Se você tiver febre, tosse
-                e dificuldade em respirar, procure atendimento médico e ligue
-                com antecedência. Siga as instruções da sua autoridade
-                sanitária local.
-              </li>
-              <li>
-                Mantenha-se atualizado(a) sobre cidades ou áreas locais onde o
-                COVID-19 está se espalhando. Se possível, evite viajar -
-                especialmente se for uma pessoa idosa ou tiver diabetes,
-                doenças cardíacas ou pulmonares.
-              </li>
-            </ul>
-            <a target="_alt" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms">Clique
-              aqui para mais infomações</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="youtube" class="bg-warning">
-      <div class="container py-4">
-        <h2 class="text-center text-uppercase pb-2">
-          <i class="fas fa-video"></i> Vídeos úteis
-        </h2>
-        <div class="videos">
+      <section id="grupoRisco">
+        <div class="container py-4">
+          <h2 class="text-uppercase pb-2">
+            <i class="fas fa-exclamation-circle"></i> Grupos de risco
+          </h2>
           <div class="row">
-            <div class="col-md-4">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/CvbTsGLVvGI" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="col-md pb-3">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="grupo-risco-icone"
+                  src="img/grandparents.svg"
+                  alt="ícone de um casal de idosos"
+                />
+              </div>
+              <h3>Idosos</h3>
             </div>
-            <div class="col-md-4">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/WEMpIQ30srI" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="col-md pb-3">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="grupo-risco-icone"
+                  src="img/muffin.svg"
+                  alt="ícone de um Cup Cake"
+                />
+              </div>
+              <h3>Diabéticos</h3>
             </div>
-            <div class="col-md-4">
-              <iframe width="100%" height="200" src="https://www.youtube.com/embed/e-JaQOeFxtI" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="col-md pb-3">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="grupo-risco-icone"
+                  src="img/hearth.svg"
+                  alt="ícone de uma rosquinha"
+                />
+              </div>
+              <h3>Pessoas com problemas cardíacos</h3>
+            </div>
+            <div class="col-md">
+              <div class="d-flex justify-content-center">
+                <img
+                  class="grupo-risco-icone"
+                  src="img/lung.svg"
+                  alt="ícone de um pulmão"
+                />
+              </div>
+              <h3>Pessoas com problemas respiratórios</h3>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      <div class="bg-light">
-        <div class="container text-center py-2">
-          <span class="text-muted">Todos os dados foram retirados dos sites
-            <a target="_alt" href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms">World
-              Health Organization</a>
-            e <a href="https://mathdro.id/" target="_alt">Mathdroid</a>
-            <br />
-            Desenvolvido por
-            <a href="mailto:rafikmoreiradias@gmail.com">@rafikmoreira</a>
-            <br />
-            <span class="text-danger">
-              BETA - Página em desenvolvimento
-            </span>
-          </span>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-  <script src="js/app.js"></script>
-</body>
+      </section>
+      <section id="protecao">
+        <div class="container pb-4">
+          <h2 class="text-uppercase pb-2">
+            <i class="fas fa-medkit"></i> Medidas de Proteção
+          </h2>
+          <div class="text-justify">
+            <div>
+              <p class="m-0">
+                Fique atento às informações mais recentes sobre o surto de
+                COVID-19, disponíveis no site da OMS e por meio de sua
+                autoridade nacional e local de saúde pública. Muitos países ao
+                redor do mundo já viram casos de COVID-19 e em vários ocorreram
+                surtos. As autoridades da China e de alguns outros países
+                conseguiram retardar ou interromper seus surtos. No entanto, a
+                situação é imprevisível, portanto verifique regularmente as
+                últimas notícias.
+              </p>
 
+              <p class="mt-3">
+                Você pode reduzir suas chances de ser infectado ou espalhar o
+                COVID-19 tomando algumas precauções simples:
+              </p>
+              <ul>
+                <li>
+                  Limpe regularmente e cuidadosamente as mãos com álcool ou
+                  lave-as com água e sabão.
+                </li>
+                <li>
+                  Mantenha pelo menos 1 metro de distância entre você e qualquer
+                  pessoa que esteja tossindo ou espirrando.
+                </li>
+                <li>
+                  Fique em casa se não se sentir bem. Se você tiver febre, tosse
+                  e dificuldade em respirar, procure atendimento médico e ligue
+                  com antecedência. Siga as instruções da sua autoridade
+                  sanitária local.
+                </li>
+                <li>
+                  Mantenha-se atualizado(a) sobre cidades ou áreas locais onde o
+                  COVID-19 está se espalhando. Se possível, evite viajar -
+                  especialmente se for uma pessoa idosa ou tiver diabetes,
+                  doenças cardíacas ou pulmonares.
+                </li>
+              </ul>
+              <a
+                target="_alt"
+                href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms"
+                >Clique aqui para mais infomações</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="youtube" class="bg-warning">
+        <div class="container py-4">
+          <h2 class="text-center text-uppercase pb-2">
+            <i class="fas fa-video"></i> Vídeos úteis
+          </h2>
+          <div class="videos">
+            <div class="row">
+              <div class="col-md-4">
+                <iframe
+                  width="100%"
+                  height="200"
+                  src="https://www.youtube.com/embed/CvbTsGLVvGI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="col-md-4">
+                <iframe
+                  width="100%"
+                  height="200"
+                  src="https://www.youtube.com/embed/WEMpIQ30srI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="col-md-4">
+                <iframe
+                  width="100%"
+                  height="200"
+                  src="https://www.youtube.com/embed/e-JaQOeFxtI"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="bg-light">
+          <div class="container text-center py-2">
+            <span class="text-muted"
+              >Todos os dados foram retirados dos sites
+              <a
+                target="_alt"
+                href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=symptoms"
+                >World Health Organization</a
+              >
+              e <a href="https://mathdro.id/" target="_alt">Mathdroid</a>
+              <br />
+              Desenvolvido por
+              <a href="mailto:rafikmoreiradias@gmail.com">@rafikmoreira</a>
+              <br />
+              <span class="text-danger">
+                BETA - Página em desenvolvimento
+              </span>
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

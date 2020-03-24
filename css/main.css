@@ -38,14 +38,20 @@ h2 {
 
 }
 
-#sintomas h3 {
+#sintomas h3,
+#grupoRisco h3 {
     font-size: 1.3rem;
     text-align: center;
     font-family: 'Bellota', cursive;
     font-weight: 800;
-
+    text-transform: uppercase;
 }
 
+.grupo-risco-icone {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
 
 .virus-info {
     color: white;
