@@ -7,8 +7,6 @@ class Covid {
   }
   async getData(apiUrl) {
     try {
-      const loader = document.getElementById("loader");
-      const covidStatus = document.getElementById("covidStatus");
       const lastUpdate = document.getElementById("lastUpdate");
       const confirmed = document.getElementById("confirmed");
       const active = document.getElementById("active");
@@ -21,8 +19,7 @@ class Covid {
       active.innerHTML = data.active;
       recovered.innerHTML = data.recovered;
       deaths.innerHTML = data.deaths;
-      loader.classList.add("d-none");
-      covidStatus.classList.remove("d-none");
+
     } catch (e) {
       console.log(e);
     }
@@ -82,7 +79,7 @@ class Covid {
       console.log(e);
     }
   }
-  setWorldStatus(){
+  setWorldStatus() {
     document.getElementById("totalLocais").innerHTML = this.worldStatus.totalLocations
     // Setando as informações para o mundo
     document.getElementById("worldConfirmed").innerHTML = this.worldStatus.confirmed
