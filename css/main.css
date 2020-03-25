@@ -43,7 +43,13 @@ h3 {
 h2 {
     font-family: 'Oswald', sans-serif;
 }
-
+nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+}
+.cursor-pointer li a {
+    cursor: pointer;
+}
 #sintomas h3,
 #grupoRisco h3 {
     font-size: 1.3rem;

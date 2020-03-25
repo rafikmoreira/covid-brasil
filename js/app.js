@@ -1,6 +1,8 @@
 // api https://covid19.mathdro.id/api/confirmed
 // br https://covid19.mathdro.id/api/countries/BR/confirmed
 // região 18
+
+
 class Covid {
   constructor() {
     moment.locale("pt-br");
