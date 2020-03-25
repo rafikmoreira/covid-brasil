@@ -344,6 +344,7 @@ class Covid {
         }
       }
     });
+    document.getElementById("loader2").classList.add("d-none")
   }
   init() {
     this.getData("https://covid19.mathdro.id/api/countries/BR/confirmed");
