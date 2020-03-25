@@ -60,13 +60,10 @@ class Covid {
         confirmed: confirmedAll.reduce(reducer),
         active: activeAll.reduce(reducer),
         recovered: recoveredAll.reduce(reducer),
-        deaths: deathsAll.reduce(reducer)
+        deaths: deathsAll.reduce(reducer),
+        totalLocations: data.length
       }
-      // Setando as informações para o mundo
-      document.getElementById("worldConfirmed").innerHTML = this.worldStatus.confirmed
-      document.getElementById("worldActive").innerHTML = this.worldStatus.active
-      document.getElementById("worldRecovered").innerHTML = this.worldStatus.recovered
-      document.getElementById("worldDeaths").innerHTML = this.worldStatus.deaths
+      this.setWorldStatus()
       // Setando informações de cada país
       this.argentina = this.recoveryData("Argentina", dataFilter);
       this.bolivia = this.recoveryData("Bolivia", dataFilter);
@@ -86,7 +83,12 @@ class Covid {
     }
   }
   setWorldStatus(){
-
+    document.getElementById("totalLocais").innerHTML = this.worldStatus.totalLocations
+    // Setando as informações para o mundo
+    document.getElementById("worldConfirmed").innerHTML = this.worldStatus.confirmed
+    document.getElementById("worldActive").innerHTML = this.worldStatus.active
+    document.getElementById("worldRecovered").innerHTML = this.worldStatus.recovered
+    document.getElementById("worldDeaths").innerHTML = this.worldStatus.deaths
   }
   recoveryData(region, myArray) {
     const response = myArray.filter(e => { if (e.countryRegion == region || e.provinceState == region) return e })
