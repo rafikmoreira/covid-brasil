@@ -71,7 +71,6 @@ class Covid {
     return response[0]
   }
   graphicsSouthAmerica() {
-    console.log(this.brazil)
     // Gráficos América do Sul
     // Casos
     let el1 = document.getElementById("americaDoSulCasos").getContext("2d");
