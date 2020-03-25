@@ -20,6 +20,20 @@
     text-align: justify;
 }
 
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+.effect {
+    min-height: inherit;
+}
+.content {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+}
+
 #sintomas h2,
 h3 {
     padding: 0;
