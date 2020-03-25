@@ -94,7 +94,7 @@ class Covid {
         ],
         datasets: [
           {
-            label: "Casos confirmados",
+            label: "Casos Confirmados",
             data: [
               this.argentina.confirmed,
               this.bolivia.confirmed,
