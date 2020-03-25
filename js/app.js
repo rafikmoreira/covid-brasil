@@ -48,6 +48,25 @@ class Covid {
           return e;
         }
       });
+      // Tratando informações sobre o mundo
+      // Obtendo os dados     
+      let confirmedAll = data.map(e => e.confirmed)
+      let activeAll = data.map(e => e.active)
+      let recoveredAll = data.map(e => e.recovered)
+      let deathsAll = data.map(e => e.deaths)
+
+      const reducer = (accumulator, currentValue) => accumulator + currentValue
+      this.worldStatus = {
+        confirmed: confirmedAll.reduce(reducer),
+        active: activeAll.reduce(reducer),
+        recovered: recoveredAll.reduce(reducer),
+        deaths: deathsAll.reduce(reducer)
+      }
+      // Setando as informações para o mundo
+      document.getElementById("worldConfirmed").innerHTML = this.worldStatus.confirmed
+      document.getElementById("worldActive").innerHTML = this.worldStatus.active
+      document.getElementById("worldRecovered").innerHTML = this.worldStatus.recovered
+      document.getElementById("worldDeaths").innerHTML = this.worldStatus.deaths
       // Setando informações de cada país
       this.argentina = this.recoveryData("Argentina", dataFilter);
       this.bolivia = this.recoveryData("Bolivia", dataFilter);
@@ -65,6 +84,9 @@ class Covid {
     } catch (e) {
       console.log(e);
     }
+  }
+  setWorldStatus(){
+
   }
   recoveryData(region, myArray) {
     const response = myArray.filter(e => { if (e.countryRegion == region || e.provinceState == region) return e })
