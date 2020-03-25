@@ -3,17 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 /* CSS */
-.title-container {}
-
 .title-container h1 {
     padding: 0;
     margin: 0;
     font-size: 2rem;
     display: inline-block;
-}
-
-.bg-blue {
-    background-color: dodgerblue
 }
 
 .text-dark-2 {
@@ -33,9 +27,7 @@ h3 {
 }
 
 h2 {
-    font-family: 'Oswald',
-        sans-serif;
-
+    font-family: 'Oswald', sans-serif;
 }
 
 #sintomas h3,
