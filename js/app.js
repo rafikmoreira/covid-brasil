@@ -60,8 +60,9 @@ class Covid {
         active: activeAll.reduce(reducer),
         recovered: recoveredAll.reduce(reducer),
         deaths: deathsAll.reduce(reducer),
-        totalLocations: data.length
+        totalLocations: 0
       }
+      this.worldStatus.totalLocations = await axios("https://covid19.mathdro.id/api/countries").then(r => r.data.countries.length)
       this.setWorldStatus()
       // Setando informações de cada país
       this.argentina = this.recoveryData("Argentina", dataFilter);
