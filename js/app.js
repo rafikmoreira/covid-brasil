@@ -2,12 +2,14 @@
 // br https://covid19.mathdro.id/api/countries/BR/confirmed
 // região 18
 
+window.addEventListener("load", ()=> {
+  $('#alertFicaEmCasa').modal()
+})
 
 class Covid {
   constructor() {
     moment.locale("pt-br");
   }
-  // remover depois e alterar para os dados globais
   async setDataBrazil(data) {
     try {
       const lastUpdate = document.getElementById("lastUpdate");
@@ -15,8 +17,7 @@ class Covid {
       const active = document.getElementById("active");
       const recovered = document.getElementById("recovered");
       const deaths = document.getElementById("deaths");
-      // const data = await axios(apiUrl).then(r => r.data[0]);
-      // set values
+      // Setando valores
       lastUpdate.innerHTML = moment(data.lastUpdate).format("lll");
       confirmed.innerHTML = data.confirmed;
       active.innerHTML = data.active;
@@ -374,10 +375,10 @@ class Covid {
     document.getElementById("loader2").classList.add("d-none")
   }
   init() {
-    // this.getData("https://covid19.mathdro.id/api/countries/BR/confirmed");
     this.getDataAll("https://covid19.mathdro.id/api/confirmed");
   }
 }
 
 const app = new Covid();
 app.init();
+
