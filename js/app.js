@@ -7,14 +7,15 @@ class Covid {
   constructor() {
     moment.locale("pt-br");
   }
-  async getData(apiUrl) {
+  // remover depois e alterar para os dados globais
+  async setDataBrazil(data) {
     try {
       const lastUpdate = document.getElementById("lastUpdate");
       const confirmed = document.getElementById("confirmed");
       const active = document.getElementById("active");
       const recovered = document.getElementById("recovered");
       const deaths = document.getElementById("deaths");
-      const data = await axios(apiUrl).then(r => r.data[0]);
+      // const data = await axios(apiUrl).then(r => r.data[0]);
       // set values
       lastUpdate.innerHTML = moment(data.lastUpdate).format("lll");
       confirmed.innerHTML = data.confirmed;
@@ -64,6 +65,8 @@ class Covid {
       }
       this.worldStatus.totalLocations = await axios("https://covid19.mathdro.id/api/countries").then(r => r.data.countries.length)
       this.setWorldStatus()
+      // let brazilData = 
+      this.setDataBrazil(data.filter(e => e.countryRegion == "Brazil")[0])
       // Setando informações de cada país
       this.argentina = this.recoveryData("Argentina", dataFilter);
       this.bolivia = this.recoveryData("Bolivia", dataFilter);
@@ -371,7 +374,7 @@ class Covid {
     document.getElementById("loader2").classList.add("d-none")
   }
   init() {
-    this.getData("https://covid19.mathdro.id/api/countries/BR/confirmed");
+    // this.getData("https://covid19.mathdro.id/api/countries/BR/confirmed");
     this.getDataAll("https://covid19.mathdro.id/api/confirmed");
   }
 }
